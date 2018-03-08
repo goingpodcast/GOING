@@ -1,6 +1,11 @@
 body {
   padding-top: 20px;
   font-family: 'Open Sans', sans-serif;
+	color: #242424;
+}
+
+a {
+	color: #60a65e;
 }
 
 
