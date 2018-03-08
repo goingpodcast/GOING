@@ -51,6 +51,9 @@ a {
 
 
 @media (max-width: 980px) {
+	body {
+		color: #242424;
+	}
 	.mobile-share {
 		display:block;
 		padding-top:2em;
