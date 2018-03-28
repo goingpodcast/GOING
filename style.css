@@ -108,10 +108,13 @@ label {
 	.mailing-list-header {
 		font-size:1.25em !important;
 	}	
-	.mobile-share {
+	.mobile-share, .update {
 		display:block;
-		padding-top:2em;
-		margin:0px !important;
+		padding-right:25px;
+		padding-left:25px;
+	}
+	.mobile-share {
+		margin-top:2em;
 	}
 
 	.mobile-share h3 {
