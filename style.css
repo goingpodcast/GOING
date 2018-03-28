@@ -127,7 +127,11 @@ label {
 		margin-left:auto;
 		margin-right:auto;
 		text-align:center;
+		width:100%;
 	}
+	.bitcoin-donation img {
+		width:75% !important;
+	}	
 	.mobile-share h3 {
 		font-size:.75em;
 		padding-top:.25em;
