@@ -50,6 +50,13 @@ label {
     background-color: #242424;
     color: white;	
 }
+.bitcoin-donation {
+	width:100%;
+	font-size:.5em;
+}
+.bitcoin-donation img {
+	width:75%;
+}
 
 .body-title {
 	padding-top: 1.25em;
@@ -116,7 +123,11 @@ label {
 	.mobile-share {
 		margin-top:2em;
 	}
-
+	.bitcoin-donation {
+		margin-left:auto;
+		margin-right:auto;
+		text-align:center;
+	}
 	.mobile-share h3 {
 		font-size:.75em;
 		padding-top:.25em;
