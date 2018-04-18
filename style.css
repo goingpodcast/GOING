@@ -1,4 +1,4 @@
-
+	
 .update-date {
 	font-size:.7em;
 	color:#aaaaaa;
@@ -14,8 +14,8 @@
 	color:white;
 	background-color: #60a65e;
 	display: inline-block;	
-	padding: 5px 15px;
-	margin: 2px 0px;
+	padding: 3px 10px;
+	margin: 4px 0px;
 	font-weight: 600;
 }
 
@@ -23,6 +23,7 @@
 	text-align:center;
 	margin-top:10px;
 	padding-top:10px;
+	font-size:.8em;
 }
 
 .footer-text {
@@ -39,8 +40,8 @@
 	background: linear-gradient(
     to right, 
     #ffffff 0%, 
-    #ffffff 30%, 
-    #f7f7f7 30%, 
+    #ffffff 40%, 
+    #f7f7f7 40%, 
     #f7f7f7 100%
   );
   height: 100%;
@@ -81,6 +82,11 @@
 #copyright {
 	position: relative;
 	top:-5px;
+	font-size:.8em;
+	color:#424242;
+}
+#copyright-mobile {
+	display:none;
 }
 .disabled {
 	color: #9edf9c !important;
@@ -149,7 +155,7 @@ a {
 	padding: 7px 12px;
 	font-size:.75em;
 	margin-bottom:5px;
-	margin-top:0px;
+	margin-top:5px;
 }
 
 .subscribe-button-container {
@@ -173,12 +179,20 @@ a {
     background-color: #424242;
     color: white;	
 }
+
+
 .bitcoin-donation {
 	width:100%;
-	font-size:.5em;
+	font-size:.4em;
+	color:#999999;
+	text-align: center;
 }
 .bitcoin-donation img {
 	width:50%;
+}
+#bitcoin-donation-header {
+	text-align: center;
+	font-size:.8em;
 }
 
 .body-title {
@@ -212,10 +226,14 @@ a {
 	padding:0;
 	margin:0;
 }
+.my-4 {
+	margin: 0px 40px 0px 0px;
+}
+
 
 .left-nav h2 {
 	color: #424242;
-	padding:30px 0px 0px 0px;
+	padding:30px 0px 3px 0px;
 	margin:0px;
 	font-weight: bolder;
 	font-size: .8em;
@@ -231,23 +249,46 @@ a {
 }
 
 
-@media (max-width: 980px) {
+
+@media (max-width: 980px) {	
 	body {
 		color: #242424;
-		background-color: #f7f7f7;
+		background-color: white !important;
 	}
+
 	.navbar-nav, .nav-link, .nav-item {
 		display: inline !important;
 	}
 	.nav-item {
 		padding-right: 10px;
 	}
+
+	.update-date {
+		font-size:.7em;
+	}
+	.update-text {
+		font-size: .8em;
+	}
+	.update-title{
+		font-size: .8em;
+		font-weight: 400;
+	}
+
+	#copyright {
+		display:none;	}
+	#copyright-mobile {
+		text-align: center;
+		display:block;
+		font-size:.7em;
+	}
 	.follow-us {
 		position:relative;
 		top:-6px;
 		font-size:.8em !important;
 	}
-	
+	.body-message {
+		padding-top:0em;
+	}	
 	#navbarSupportedContent {
 		border-top: 1px solid #9edf9c;
 	}
@@ -256,6 +297,10 @@ a {
 		display:none;
 	}
 
+	#member_submit {
+		width: 100%;
+		margin-bottom:25px;
+	}
 
 	#revue-embed {
 		font-size:.75em;
@@ -267,10 +312,14 @@ a {
 		display:block;
 		padding-right:25px;
 		padding-left:25px;
+
 	}
 	.mobile-share {
-		margin-top:2em;
+		padding-top: 15px;
+		background-color:#f7f7f7;
+		margin-bottom:10px;
 	}
+
 	.bitcoin-donation {
 		margin-left:auto;
 		margin-right:auto;
@@ -282,7 +331,7 @@ a {
 		text-align:center;
 	}	
 	.mobile-share h3 {
-		font-size:.75em;
+		font-size:.9em;
 		padding-top:.25em;
 		font-weight:bolder;
 	}
@@ -313,7 +362,10 @@ a {
 	.body-background {
 		padding:0px;
 		margin:0px;
-		background-color:#f7f7f7;
+		background-color:white;
+	}
+	.gray-background {
+		background-color:white;
 	}
 
 	.body-title-wrapper p {
@@ -329,6 +381,7 @@ a {
 	.my-4 {
 		padding:0px;
 		margin:0px;
+		margin-top:.75em !important;
 	}
 
 	.footer-container {

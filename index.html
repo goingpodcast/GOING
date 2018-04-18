@@ -88,7 +88,6 @@
           <div class="my-4 left-nav">
             <h2>SUBSCRIBE TO GOING</h2>
             <p>While we are in beta, you can show your support by following us on your favorite social networks, and by subscribing to our newsletter:</p>
-            <p>&nbsp;</p>
               <form action="https://www.getrevue.co/profile/going/add_subscriber" method="post" id="revue-form" name="revue-form"  target="_blank">
               <div class="revue-form-group">
                 <input class="revue-form-field" placeholder="Enter your email address" name="member[email]" id="member_email" type="email">
@@ -99,10 +98,7 @@
               </form>
 
 
-
-
-
-            <p>You can also <a href="https://www.patreon.com/goingpodcast">support us on Patreon</a> or make a Bitcoin donation at this address:</p>
+            <p id="bitcoin-donation-header">You can also <a href="https://www.patreon.com/goingpodcast">support us on Patreon</a> or make a Bitcoin donation here:</p>
             <div class="bitcoin-donation">
               <img src="assets/GOING_bitcoin_qr_code.jpg">
               1EN2wLGNXvAR1Wx5TxLdz2bRUWtHi7ftdQ
@@ -124,6 +120,33 @@
             <div class="row">
                 <div class="col-lg-1"></div>
                 <div class="col-lg-8 col-sm-12 col-med-12 body-message">
+
+
+                    <!-- Mobile Subscribe -->
+
+                    <div class="mobile-share">
+
+                    <h3>SUBSCRIBE TO GOING:</h3>     
+
+                    <p>While we are in beta, you can show your support by following us on your favorite social networks, and by subscribing to our newsletter:</p>
+                    <form action="https://www.getrevue.co/profile/going/add_subscriber" method="post" id="revue-form" name="revue-form"  target="_blank">
+                    <div class="revue-form-group">
+                      <input class="revue-form-field" placeholder="Enter your email address" name="member[email]" id="member_email" type="email">
+                      <div class="subscribe-button-container">
+                        <input value="Subscribe" name="member[subscribe]" id="member_submit" type="submit">
+                      </div>
+                    </div>
+                    </form>
+
+                    <!--
+                    <p>You can also <a href="https://www.patreon.com/goingpodcast">support us on Patreon</a> or make a Bitcoin donation at this address:</p>
+                    <div class="bitcoin-donation">
+                      <img src="assets/GOING_bitcoin_qr_code.jpg" class="mobile-qr-code"><br/>
+                      1EN2wLGNXvAR1Wx5TxLdz2bRUWtHi7ftdQ
+                    </div>
+                    -->
+                  </div>
+
 
 
                   <div class="update">
@@ -152,30 +175,7 @@
                   </div>
 
 
-                    <!-- Mobile Follow -->
 
-                    <div class="mobile-share">
-
-                    <h3>SUPPORT US:</h3>     
-
-                    <p>While we are in beta, you can show your support by following us on your favorite social networks, and by subscribing to our newsletter:</p>
-                    <form action="https://www.getrevue.co/profile/going/add_subscriber" method="post" id="revue-form" name="revue-form"  target="_blank">
-                    <div class="revue-form-group">
-                      <input class="revue-form-field" placeholder="Enter your email address" name="member[email]" id="member_email" type="email">
-                      <div class="subscribe-button-container">
-                        <input value="Subscribe" name="member[subscribe]" id="member_submit" type="submit">
-                      </div>
-                    </div>
-                    </form>
-
-
-                    <p>You can also <a href="https://www.patreon.com/goingpodcast">support us on Patreon</a> or make a Bitcoin donation at this address:</p>
-                    <div class="bitcoin-donation">
-                      <img src="assets/GOING_bitcoin_qr_code.jpg" class="mobile-qr-code"><br/>
-                      1EN2wLGNXvAR1Wx5TxLdz2bRUWtHi7ftdQ
-                    </div>
-
-                  </div>
 
 
                   
@@ -189,9 +189,11 @@
 
 
         <div class="col-lg-3 col-sm-12 col-med-12">
-            <p class="footer-text">
-              <span id="copyright">Copyright &copy; GOING 2018</span>
-            </p>
+            <div class="my-4 left-nav">
+              <p class="footer-text">
+                <span id="copyright">Copyright &copy; GOING 2018</span>
+              </p>
+            </div>
         </div>
 
 
@@ -206,6 +208,7 @@
                   <a class="footer-social" title="GOING Podcast on LinkedIn" href="https://www.linkedin.com/company/goingpodcast/" target="_blank"><i class="fab fa-linkedin"></i></a>
                   <a class="footer-social" title="GOING Podcast on Patreon" href="https://www.patreon.com/goingpodcast" target="_blank"><i class="fab fa-patreon"></i></a>
                   </p>
+                  <p id="copyright-mobile">Copyright &copy; GOING 2018</p>
         </div>
 
 
