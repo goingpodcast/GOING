@@ -1,5 +1,120 @@
+
+.update-date {
+	font-size:.7em;
+	color:#aaaaaa;
+}
+.update-text {
+	font-size: .8em;
+	color:#424242;
+	font-weight: 500;
+	margin-bottom:1.5em !important;
+}
+.update-title{
+	font-size: .9em;
+	color:white;
+	background-color: #60a65e;
+	display: inline-block;	
+	padding: 5px 15px;
+	margin: 2px 0px;
+	font-weight: 600;
+}
+
+.footer-social-container {
+	text-align:center;
+	margin-top:10px;
+	padding-top:10px;
+}
+
+.footer-text {
+	text-align:center;
+	margin-top:30px;
+	padding-top:10px;
+	font-size:.8em;
+}
+
+.wide-background {
+	position:fixed;
+	left:0px
+	top:0px;
+	background: linear-gradient(
+    to right, 
+    #ffffff 0%, 
+    #ffffff 30%, 
+    #f7f7f7 30%, 
+    #f7f7f7 100%
+  );
+  height: 100%;
+  width: 100%;
+
+}
+
+.gray-background {
+	content:"";
+    background-color:#f7f7f7;
+}
+
+.logo-container {
+	padding-top:10px;
+	padding-bottom: 6px;
+	width:75%;
+}
+
+.navbar-toggler-icon {
+	color: white;
+}
+
+.nav-link {
+	color: white !important;
+	font-size:1.8em;
+}
+
+.footer-social {
+	padding-left:10px;
+	color:#424242;
+	font-size:2em;
+}
+
+.footer-social:hover {
+	color:#60a65e;
+}
+
+#copyright {
+	position: relative;
+	top:-5px;
+}
+.disabled {
+	color: #9edf9c !important;
+	font-size:.8em !important;
+	padding-top:1.8em;
+}
+
+.hamburger-menu {
+	color: #9edf9c;
+	font-size:1.2em;	
+}
+#going-logo {
+	width:109px;
+	padding:0px;
+	margin:0px;
+}
+#going-tagline {
+	color: #9edf9c;
+	padding:0px;
+	margin:0px;
+	font-weight: bolder;
+	font-size: .8em;
+	top:-4px;
+	position: relative;
+}
+
+.navbar {
+	padding-top:10px;
+	padding-bottom:10px;
+	margin:0px;
+	background-color: #60a65e;
+}
+
 body {
-  padding-top: 20px;
   font-family: 'Open Sans', sans-serif;
 	color: #242424;
 }
@@ -10,7 +125,7 @@ a {
 
 .social {
 	color :#424242 !important;
-	font-size:2em;
+	font-size:1.2em;
 	padding-right: 7px;
 }
 
@@ -31,34 +146,31 @@ a {
 }
 .revue-form-field {
 	width:100%;
-	padding: 10px 24px;
-	font-size:1.25em;
+	padding: 7px 12px;
+	font-size:.75em;
 	margin-bottom:5px;
 	margin-top:0px;
-	border-radius:8px;
-	border: none;
 }
 
-label { 
-	margin:0px; 
-	color:#424242;
+.subscribe-button-container {
+	width:100% !important;
+	text-align:right;
+	margin-bottom:50px;
 }
 
 #member_submit {
-	background-color:#60a65e;
-	padding: 10px 24px;
+	background-color:#2b5a61;
+	padding: 7px 15px;
 	color: white;
 	border: none;
-    text-align: center;
     text-decoration: none;
-    display: inline-block;
-    font-size: 1.25em;
-    border-radius: 8px;
+    font-size: .8em;
+    border-radius: 3px;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
 }
 #member_submit:hover {
-    background-color: #242424;
+    background-color: #424242;
     color: white;	
 }
 .bitcoin-donation {
@@ -66,7 +178,7 @@ label {
 	font-size:.5em;
 }
 .bitcoin-donation img {
-	width:75%;
+	width:50%;
 }
 
 .body-title {
@@ -102,13 +214,16 @@ label {
 }
 
 .left-nav h2 {
-	font-size: 1.25em;
-	padding:0;
-	margin:0;
+	color: #424242;
+	padding:30px 0px 0px 0px;
+	margin:0px;
+	font-weight: bolder;
+	font-size: .8em;
 }
 
 .left-nav p {
-	font-size:.85em;
+	font-size:.75em;
+	color:#999999;
 }
 
 .mobile-share {
@@ -119,7 +234,28 @@ label {
 @media (max-width: 980px) {
 	body {
 		color: #242424;
+		background-color: #f7f7f7;
 	}
+	.navbar-nav, .nav-link, .nav-item {
+		display: inline !important;
+	}
+	.nav-item {
+		padding-right: 10px;
+	}
+	.follow-us {
+		position:relative;
+		top:-6px;
+		font-size:.8em !important;
+	}
+	
+	#navbarSupportedContent {
+		border-top: 1px solid #9edf9c;
+	}
+
+	.wide-background {
+		display:none;
+	}
+
 
 	#revue-embed {
 		font-size:.75em;
@@ -142,29 +278,27 @@ label {
 		width:100%;
 	}
 	.bitcoin-donation img {
-		width:75% !important;
+		width:50%;
+		text-align:center;
 	}	
 	.mobile-share h3 {
 		font-size:.75em;
 		padding-top:.25em;
 		font-weight:bolder;
 	}
-
-	.mobile-share a {
-		font-size:.7em;
-		font-weight:bolder;
-		/*padding:0px !important;
-		margin:0px !important;*/
-	}
-
 	.mobile-share p {
 		padding:0px;
-		margin:0px;
+		margin: 0px 0px 10px 0px;
+		font-size:.75em;
+
 	}
 	.mobile-social {
 		margin-left:auto;
 		margin-right:auto;
 		text-align:center;
+	}
+	.mobile-qr-code {
+		width:100px;
 	}
 	.left-nav {
 		display: none;
@@ -176,9 +310,10 @@ label {
 		margin-bottom:0 !important;
 		margin-top:0 !important;
 	}
-	.body-title-wrapper {
+	.body-background {
 		padding:0px;
 		margin:0px;
+		background-color:#f7f7f7;
 	}
 
 	.body-title-wrapper p {

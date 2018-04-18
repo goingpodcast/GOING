@@ -37,34 +37,71 @@
   </head>
 
   <body>
+    <div class="wide-background"></div>
+    <nav class="navbar navbar-expand-lg">
+    <div class="container">     
 
+      <div class="logo-container">
+        <a  href="/"><img src="assets/header_logo@2x.png" id="going-logo"></a><br/>
+        <span id="going-tagline">GO PLACES AND DO SHIT</span>
+      </div>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars hamburger-menu"></i>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <ul class="navbar-nav mr-auto">
+
+          <li class="nav-item">
+            <a class="nav-link disabled follow-us" href="#">Follow us on:</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" title="GOING Podcast on Instagram" href="https://instagram.com/goingpodcast" target="_blank"><i class="fab fa-instagram"></i></a>
+          </li>
+          <li class="nav-item">            
+            <a class="nav-link" title="GOING Podcast on Twitter" href="https://twitter.com/goingpodcast" target="_blank"><i class="fab fa-twitter"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" title="GOING Podcast on Facebook" href="https://facebook.com/goingpodcast" target="_blank"><i class="fab fa-facebook"></i></a>
+          </li>
+          <li class="nav-item">            
+            <a class="nav-link" title="GOING Podcast on Soundcloud" href="https://soundcloud.com/goingpodcast" target="_blank"><i class="fab fa-soundcloud"></i></a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+    </nav>
 
     <div class="container">
       <div class="row">
 
-
         <!-- Left Col -->
         <div class="col-lg-3 col-sm-12 col-med-12">
-          <div class="my-4 logo-image">
-            <img src="assets/small_green.png" />
+          <div class="my-4 left-nav">
+            <h2>WHO THE F*** ARE WE</h2>
+            <p>Hi! We're on a mission to create a podcast and community about traveling the world and doing really cool stuff. We want this adventure to be fun for us to make, but more importantly, fun and intersting for you to listen to. Follow along as we talk with friends around the world about what it's like in the places that they know and love the most.</p>
           </div>
           <div class="my-4 left-nav">
-            <h2>FOLLOW</h2>
-            <p>
-              <a class="social" title="GOING Podcast on Instagram" href="https://instagram.com/goingpodcast" target="_blank"><i class="fab fa-instagram"></i></a>
-              <a class="social" title="GOING Podcast on Twitter" href="https://twitter.com/goingpodcast" target="_blank"><i class="fab fa-twitter"></i></a>
-              <a class="social" title="GOING Podcast on Facebook" href="https://facebook.com/goingpodcast" target="_blank"><i class="fab fa-facebook"></i></a>
-  	          <a class="social" title="GOING Podcast on Soundcloud" href="https://soundcloud.com/goingpodcast" target="_blank"><i class="fab fa-soundcloud"></i></a>
-              <a class="social" title="GOING Podcast on Github" href="https://github.com/goingpodcast/GOING" target="_blank"><i class="fab fa-github"></i></a>
-              <a class="social" title="GOING Podcast on YouTube" href="http://goo.gl/o3Lp2r" target="_blank"><i class="fab fa-youtube"></i></a>
-              <a class="social" title="GOING Podcast on LinkedIn" href="https://www.linkedin.com/company/goingpodcast/" target="_blank"><i class="fab fa-linkedin"></i></a>
-              <a class="social" title="GOING Podcast on Patreon" href="https://www.patreon.com/goingpodcast" target="_blank"><i class="fab fa-patreon"></i></a>
-            </p>
-          </div>
-          <div class="my-4 left-nav">
-            <h2>SUPPORT</h2>
-            <p>While we are in beta, you can show your support by following us on the social networks shown above, and by <a href="https://www.getrevue.co/profile/going" target="_blank">subscribing to our newsletter</a>.</p>
+            <h2>SUBSCRIBE TO GOING</h2>
+            <p>While we are in beta, you can show your support by following us on your favorite social networks, and by subscribing to our newsletter:</p>
             <p>&nbsp;</p>
+              <form action="https://www.getrevue.co/profile/going/add_subscriber" method="post" id="revue-form" name="revue-form"  target="_blank">
+              <div class="revue-form-group">
+                <input class="revue-form-field" placeholder="Enter your email address" name="member[email]" id="member_email" type="email">
+                <div class="subscribe-button-container">
+                  <input value="Subscribe" name="member[subscribe]" id="member_submit" type="submit">
+                </div>
+              </div>
+              </form>
+
+
+
+
+
             <p>You can also <a href="https://www.patreon.com/goingpodcast">support us on Patreon</a> or make a Bitcoin donation at this address:</p>
             <div class="bitcoin-donation">
               <img src="assets/GOING_bitcoin_qr_code.jpg">
@@ -78,65 +115,67 @@
 
         <!-- Main Section -->
 
-        <div class="col-lg-9 col-sm-12 col-med-12">
-          <div class="my-4 body-title-wrapper">
-            <h2 class="body-title">The podcast about going places and doing fun, interesting things</h2>
+        
+        <div class="col-lg-9 col-sm-12 col-med-12 gray-background">
+          <div class="my-4 ">
+            
 
             <!-- Splash Message -->
             <div class="row">
-                <div class="col-lg-2"></div>
+                <div class="col-lg-1"></div>
                 <div class="col-lg-8 col-sm-12 col-med-12 body-message">
-                  <div id="revue-embed">
-                    <form action="https://www.getrevue.co/profile/going/add_subscriber" method="post" id="revue-form" name="revue-form"  target="_blank">
-                    <div class="revue-form-group">
-                      <div class="mailing-list-header"><strong>Join our mailing list for updates on the GOING podcast.</strong></div>
-                      <label for="member_email">Email address:</label>
-                      <input class="revue-form-field" placeholder="Your email address..." name="member[email]" id="member_email" type="email">
-                      <input class="revue-form-field" value="Subscribe" name="member[subscribe]" id="member_submit" type="submit">
-                    </div>
-                    </form>
-                  </div>
-
-                  <p>&nbsp;</p>
 
 
                   <div class="update">
-                  <p><strong>Update: April 10th, 2018:</strong> Recording has begun and is the big focus for this week! Editing will begin this weekend and extend into next week. While you're waiting for our first batch of episodes to be released, <a href="https://instagram.com/goingpodcast" target="_blank">check us out on Instagram</a> to follow along with our adventures.</p>
-                  <p>&nbsp;</p>
+                    <p class="update-date">April 18th, 2018</p>
+                    <div class="update-title">PREVIEW EPISODE COMING SOON</div>
+                    <p class="update-text">We're in the final stages of launching our preview episode, which will be followed shortly by the <strong>GOING: to the Holy Land</strong> series of podcasts! Once the preview launches, you'll be able to subscribe on your favorite platform and automatically receive new podcasts as they are released.</p>
+                    <p class="update-text">If you have any questions that you'd like us to answer about the Holy Land, send them to <a href="mailto:goingpodcast@gmail.com">goingpodcast@gmail.com</a>.</p>
+                    <p>&nbsp;</p>
                   </div>
 
+
                   <div class="update">
-                  <p><strong>Update: Wednesday, March 28th, 2018:</strong> We're in Tel Aviv, Israel, preparing for our initial launch! If you have any questions about the Holy Land that you'd like us to answer on an upcoming podcast, drop us a line at <a href="mailto:goingpodcast@gmail.com">goingpodcast@gmail.com</a>.</p>
+                    <p class="update-date">April 10th, 2018</p>
+                    <div class="update-title">RECORDING UPDATE</div>
+                    <p class="update-text">Recording has begun and is the big focus for this week! Editing will begin this weekend and extend into next week. While you're waiting for our first batch of episodes to be released, <a href="https://instagram.com/goingpodcast" target="_blank">check us out on Instagram</a> to follow along with our adventures.</p>
+                    <p>&nbsp;</p>
                   </div>
+
+
+
+                  <div class="update">
+                    <p class="update-date">March 28th, 2018</p>
+                    <div class="update-title">FIRST UPDATE!</div>
+                    <p class="update-text">We're in Tel Aviv, Israel, preparing for our initial launch! If you have any questions about the Holy Land that you'd like us to answer on an upcoming podcast, drop us a line at <a href="mailto:goingpodcast@gmail.com">goingpodcast@gmail.com</a>.</p>
+                    <p>&nbsp;</p>
+                  </div>
+
 
                     <!-- Mobile Follow -->
 
                     <div class="mobile-share">
 
-                    <h3>FOLLOW US HERE:</h3>
+                    <h3>SUPPORT US:</h3>     
 
-                    <p class="mobile-social">
-                      <a class="social" title="GOING Podcast on Instagram" href="https://instagram.com/goingpodcast" target="_blank"><i class="fab fa-instagram"></i></a>
-                      <a class="social" title="GOING Podcast on Twitter" href="https://twitter.com/goingpodcast" target="_blank"><i class="fab fa-twitter"></i></a>
-                      <a class="social" title="GOING Podcast on Facebook" href="https://facebook.com/goingpodcast" target="_blank"><i class="fab fa-facebook"></i></a>
-                      <a class="social" title="GOING Podcast on Soundcloud" href="https://soundcloud.com/goingpodcast" target="_blank"><i class="fab fa-soundcloud"></i></a>
-                      <a class="social" title="GOING Podcast on Github" href="https://github.com/goingpodcast/GOING" target="_blank"><i class="fab fa-github"></i></a>
-                      <a class="social" title="GOING Podcast on YouTube" href="http://goo.gl/o3Lp2r" target="_blank"><i class="fab fa-youtube"></i></a>
-                      <a class="social" title="GOING Podcast on LinkedIn" href="https://www.linkedin.com/company/goingpodcast/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                      <a class="social" title="GOING Podcast on Patreon" href="https://www.patreon.com/goingpodcast" target="_blank"><i class="fab fa-patreon"></i></a>
-                    </p>
+                    <p>While we are in beta, you can show your support by following us on your favorite social networks, and by subscribing to our newsletter:</p>
+                    <form action="https://www.getrevue.co/profile/going/add_subscriber" method="post" id="revue-form" name="revue-form"  target="_blank">
+                    <div class="revue-form-group">
+                      <input class="revue-form-field" placeholder="Enter your email address" name="member[email]" id="member_email" type="email">
+                      <div class="subscribe-button-container">
+                        <input value="Subscribe" name="member[subscribe]" id="member_submit" type="submit">
+                      </div>
+                    </div>
+                    </form>
 
-                    <p>&nbsp;</p>
 
-                    <h3>SUPPORT US:</h3>                    
-                    <p>You can <a href="https://www.patreon.com/goingpodcast">support us on Patreon</a> or make a Bitcoin donation at this address:</p>
+                    <p>You can also <a href="https://www.patreon.com/goingpodcast">support us on Patreon</a> or make a Bitcoin donation at this address:</p>
                     <div class="bitcoin-donation">
-                      <img src="assets/GOING_bitcoin_qr_code.jpg">
+                      <img src="assets/GOING_bitcoin_qr_code.jpg" class="mobile-qr-code"><br/>
                       1EN2wLGNXvAR1Wx5TxLdz2bRUWtHi7ftdQ
                     </div>
 
-
-                    </div>
+                  </div>
 
 
                   
@@ -149,19 +188,27 @@
         </div>
 
 
-
-
-
-
-
-
-      </div>
-    </div>
-    <div class="container footer-container">
-      <div class="row">
-        <div class="col-12">
-          Copyright &copy; GOING 2018
+        <div class="col-lg-3 col-sm-12 col-med-12">
+            <p class="footer-text">
+              <span id="copyright">Copyright &copy; GOING 2018</span>
+            </p>
         </div>
+
+
+        <div class="col-lg-9 col-sm-12 col-med-12 gray-background">
+                  <p class="footer-social-container">
+                  <a class="footer-social" title="GOING Podcast on Instagram" href="https://instagram.com/goingpodcast" target="_blank"><i class="fab fa-instagram"></i></a>
+                  <a class="footer-social" title="GOING Podcast on Twitter" href="https://twitter.com/goingpodcast" target="_blank"><i class="fab fa-twitter"></i></a>
+                  <a class="footer-social" title="GOING Podcast on Facebook" href="https://facebook.com/goingpodcast" target="_blank"><i class="fab fa-facebook"></i></a>
+                  <a class="footer-social" title="GOING Podcast on Soundcloud" href="https://soundcloud.com/goingpodcast" target="_blank"><i class="fab fa-soundcloud"></i></a>
+                  <a class="footer-social" title="GOING Podcast on Github" href="https://github.com/goingpodcast/GOING" target="_blank"><i class="fab fa-github"></i></a>
+                  <a class="footer-social" title="GOING Podcast on YouTube" href="http://goo.gl/o3Lp2r" target="_blank"><i class="fab fa-youtube"></i></a>
+                  <a class="footer-social" title="GOING Podcast on LinkedIn" href="https://www.linkedin.com/company/goingpodcast/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                  <a class="footer-social" title="GOING Podcast on Patreon" href="https://www.patreon.com/goingpodcast" target="_blank"><i class="fab fa-patreon"></i></a>
+                  </p>
+        </div>
+
+
       </div>
     </div>
 
