@@ -1,7 +1,12 @@
-	
+
 .update-date {
 	font-size:.7em;
 	color:#aaaaaa;
+}
+
+.play-links{
+	font-size:.75em;
+	text-align:center;
 }
 .update-text {
 	font-size: .8em;
@@ -81,7 +86,7 @@
 
 #copyright {
 	position: relative;
-	top:-5px;
+	top:8px;
 	font-size:.8em;
 	color:#424242;
 }
@@ -408,3 +413,7 @@ a {
 		color: #60a65e !important;
 	}
 }
+
+
+
+
